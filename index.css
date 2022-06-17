@@ -1,13 +1,15 @@
-.container{
-    text-align:center;
-    margin:0 auto;
-}
-
 h2 {
     margin-bottom: 2rem;
 }
 tr, th, td {
     transition: color .15s linear;
+}
+.wrapper {
+    flex-grow: 1;
+}
+.container{
+    text-align:center;
+    margin:0 auto;
 }
 .left-title {
     font-weight: bold;
