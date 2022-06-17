@@ -1,0 +1,43 @@
+.container{
+    text-align:center;
+    margin:0 auto;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+tr, th, td {
+    transition: color .15s linear;
+}
+.left-title {
+    font-weight: bold;
+    transition: all .15s linear;
+}
+.left-title:hover{
+    background-color: #fafafa;
+    transition: all .15s linear;
+}
+.span_button{
+    margin:0;
+}
+
+.footer {
+    /* width : 100%; */
+    /* margin: 0 auto; */
+    margin-top:40px;
+    /* display:flex;
+    flex-wrap:nowrap;
+    justify-content:center; */
+    color : rgba(225, 223, 219, 1);
+    background-color: rgba(48,48,51,1);
+}
+
+.footer > div > p > a:hover, .footer > div > h2 > a:hover {
+    color: rgba(190, 190, 255, 1);
+    text-decoration: none;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
