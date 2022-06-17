@@ -1,11 +1,15 @@
+html,body{
+    height: 100%;
+    /* background-color: azure; */
+}
 h2 {
     margin-bottom: 2rem;
 }
 tr, th, td {
     transition: color .15s linear;
 }
-.wrapper {
-    flex-grow: 1;
+.wrapper{
+    min-height: 100%;
 }
 .container{
     text-align:center;

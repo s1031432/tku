@@ -25,4 +25,5 @@ window.onload = () => {
         console.log(this);
         $(event.target.parentElement).css("background-color", "");
     });
+    $("#span_row > .ant-tag").eq(0).click();
 }
