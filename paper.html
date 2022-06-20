@@ -18,15 +18,17 @@
                     <a class="navbar-brand" href="http://www.csie.tku.edu.tw/main.aspx" target="_blank">TKUCSIE</a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">基本資料</a></li>
+                    <li><a href="index.html">基本資料</a></li>
                     <li><a href="teacher.html">教師</a></li>
-                    <li><a href="paper.html">期刊論文</a></li>
+                    <li class="active"><a href="paper.html">期刊論文</a></li>
                     <li><a href="research.html">研究成果發表</a></li>
                 </ul>
             </div>
         </nav>
         <div class="container">
-            <div style="height:30px;"></div>
+            <div style="height:30px;">
+                
+            </div>
             <div style="display:flex;justify-content:space-around;">
                 <div style="padding:20px; margin:auto 0;">
                     <img src="logo-485x95-g.png" width="100%" alt="">
@@ -35,7 +37,7 @@
                     <img src="0000000062.jpg" alt="tkulogo" width="100%">
                 </div>
             </div>
-            <table id="table1" class="rwd-table">
+            <table id="table1" class="rwd-table" hidden>
                 <tr>
                     <td colspan="2"><h3><b>基本資料</b></h3></td>
                 </tr>
@@ -82,20 +84,20 @@
                 </tr>
             </table>
             <hr>
-            <div id="span_row" class="rwd-table" hidden>
+            <div id="span_row" class="rwd-table">
                 <span class="ant-tag ant-tag-checkable span_button">期刊論文</span>
                 <span class="ant-tag ant-tag-checkable span_button">研討會論文</span>
                 <span class="ant-tag ant-tag-checkable span_button">專案計畫</span>
 
-                <span class="ant-tag ant-tag-checkable span_button">專書</span>
-                <span class="ant-tag ant-tag-checkable span_button">專利</span>
-                <span class="ant-tag ant-tag-checkable span_button">活動服務</span>
+                <!-- <span class="ant-tag ant-tag-checkable span_button" hidden>專書</span>
+                <span class="ant-tag ant-tag-checkable span_button" hidden>專利</span>
+                <span class="ant-tag ant-tag-checkable span_button" hidden>活動服務</span>
 
-                <span class="ant-tag ant-tag-checkable span_button">研究</span>
-                <span class="ant-tag ant-tag-checkable span_button">榮譽</span>
-                <span class="ant-tag ant-tag-checkable span_button">經歷</span>
+                <span class="ant-tag ant-tag-checkable span_button" hidden>研究</span>
+                <span class="ant-tag ant-tag-checkable span_button" hidden>榮譽</span>
+                <span class="ant-tag ant-tag-checkable span_button" hidden>經歷</span> -->
             </div>
-            <table class="rwd-table span_table" hidden>
+            <table class="rwd-table span_table">
                 <thead>
                     <tr>
                         <th nowrap="nowrap">年度</th>
@@ -3043,7 +3045,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="footer" style="margin-top:200px;">
+        <div class="footer">
             <div class="row">
                 <div class="col-0 col-sm-0 col-md-3 col-lg-3"></div>
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3" style="padding:50px;">
@@ -3062,3 +3064,6 @@
 
     </body>
 </html>
+<script>
+    $("#span_row > .ant-tag").eq(0).attr("class", "ant-tag span_button ant-tag-checkable-checked");
+</script>
